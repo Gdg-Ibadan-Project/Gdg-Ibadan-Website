@@ -1,5 +1,4 @@
 .nav_container{
-    max-width: 65%;
     position: relative;
     section{
         display: flex;
@@ -22,7 +21,7 @@
             right: 31%;
 
             a{
-                border: 1.5px solid black;
+                border: 1.8px solid black;
                 padding: 6px 8px;
                 border-radius: 100px;
                 transition: background-color .5s, border .3s;
