@@ -4,11 +4,11 @@
     max-width: 80px;
     color: black;
     padding: 8px;
-    margin-left: 35px;
     transition: max-width .2s;
 
    nav{
         padding: 0;
+
       ul{
             padding: 0;
             color: black;
@@ -21,6 +21,7 @@
                 justify-content: center;
                 padding: 14px;
             }
+
             .maximize{
                 background-color: black;
                 color: white;

@@ -10,7 +10,7 @@ const Sidenav = () => {
         <nav>
             <ul>
                 <li className={styles.max_con}>
-                      <Maximize3 className={styles.maximize} />
+                    <Maximize3 className={styles.maximize} />
                 </li>
                 <li>
                     <Home />

@@ -1,0 +1,67 @@
+.nav_container{
+    max-width: 65%;
+    position: relative;
+    section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        nav {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            gap: 9px;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 8px;
+            border-radius: 100px;
+            color: black;
+            position: fixed;
+            bottom: 5rem;
+            right: 31%;
+
+            a{
+                border: 1.5px solid black;
+                padding: 6px 8px;
+                border-radius: 100px;
+                transition: background-color .5s, border .3s;
+            }
+
+            .active{
+                background-color: black;
+                color: white;
+            }
+
+            a:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+        
+        div{
+            position: fixed;
+            bottom: 5rem;
+            right: 5rem;
+
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: transparent;
+                border: none;
+                color: white;
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+                background: conic-gradient(from 130.3deg at 50.96% 56.41%, #34A853 -27.19deg, #4285F4 61.15deg, #EA4335 155.76deg, #FBBC04 245.62deg, #34A853 332.81deg, #4285F4 421.15deg);
+                    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), 0px 3px 6.24px 0.78px rgba(226, 226, 226, 0.2);
+                
+                .play_icon{
+                    width: 23px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+}

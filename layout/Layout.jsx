@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
+import BottomNav from "../components/BottomNav/BottomNav";
 import Navbar from "../components/Navbar/Navbar";
-import Sidenav from "../components/Sidenav/Sidenav";
 import styles from "./Layout.module.scss";
 
 
@@ -40,8 +40,10 @@ const Layout = ({ children }) => {
   return (
     <div id="home" data-scroll-container ref={MainContainer}>
       <Navbar />
-      <Sidenav />
-      <div className={styles.container}>{children}</div>
+      <div className={styles.container}>
+        <BottomNav />
+        {children}
+      </div>
     </div>
   );
 };
