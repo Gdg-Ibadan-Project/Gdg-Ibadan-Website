@@ -6,7 +6,7 @@
         align-items: center;
         position: absolute;
         nav {
-            max-width: 500px;
+            // max-width: 500px;
             margin: auto;
             display: flex;
             gap: 9px;
@@ -21,8 +21,8 @@
             right: 31%;
 
             a{
-                border: 1.8px solid black;
-                padding: 6px 8px;
+                border: 1px solid black;
+                padding: 10px 9px;
                 border-radius: 100px;
                 transition: background-color .5s, border .3s;
             }

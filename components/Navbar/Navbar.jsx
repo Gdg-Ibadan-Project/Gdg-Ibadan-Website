@@ -2,7 +2,7 @@ import styles from './Navbar.module.scss'
 import {Location, Calendar} from 'iconsax-react'
 const Navbar = () => {
   return (
-    <nav className={styles.navbar_container}>
+    <nav className={styles.navbar_container} data-scroll data-scroll-sticky data-scroll-sticky="#home">
       <h1>GDG IBADAN</h1>
 
       <div>
