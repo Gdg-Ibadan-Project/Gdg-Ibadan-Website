@@ -1,0 +1,32 @@
+.navbar_container{
+    max-width: 95%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    // background-color: red;
+    position: fixed;
+    right: 0;
+    left: 0;
+
+    h1{
+        letter-spacing: 0.05rem;
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p{
+            letter-spacing: 0.04rem;
+        }
+    }
+
+    button{
+        border: none;
+        background: transparent;
+        border-radius: 5px;
+        padding: 7px 12px;
+        background-color: white;
+    }
+}
