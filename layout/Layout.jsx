@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
   }, []);
   return (
     <div id="home" data-scroll-container ref={MainContainer}>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className={styles.container}>{children}</div>
     </div>
   );
