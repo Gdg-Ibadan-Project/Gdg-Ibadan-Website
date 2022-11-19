@@ -2,6 +2,7 @@ import Head from "next/head";
 import Event from "../components/Event/Event";
 import Hero from "../components/Hero/Hero";
 import favicon from "../assets/favicon.webp"
+import About from "../components/About/About";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
 
       </Head>
       <Hero />
+      <About />
       <Event />
       {/* <h1>HELLO Dev.</h1>
       <h1>Pick it up from here</h1> */}
