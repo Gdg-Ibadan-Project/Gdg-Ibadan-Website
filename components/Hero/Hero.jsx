@@ -2,7 +2,7 @@ import Styles from "./Hero.module.scss";
 
 const Hero = () => {
     return (
-        <div className={Styles.container}>
+        <div className={Styles.container} id="top">
             <p>Welcome to</p>
             <section>
                 <h1>GDG IBADAN ANNUAL FESTIVAL 2022</h1>
