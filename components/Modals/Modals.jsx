@@ -3,14 +3,18 @@ import styles from './Modals.module.scss'
 import {CloseCircle, Twitch} from 'iconsax-react'
 import Image from 'next/image'
 import google from '../../assets/google.svg'
-import {Facebook, Instagram, LinkCircle, Forward, Backward, ArrowCircleLeft, ArrowCircleRight} from 'iconsax-react'
+import { ArrowRight, ArrowLeft} from 'iconsax-react'
+import icon from '../../assets/icon1.svg'
+import icon2 from '../../assets/icon2.svg'
+import icon3 from '../../assets/icon3.svg'
+import icon4 from '../../assets/icon4.svg'
 
 
 const Modals = () => {
   return (
     <div className={styles.modal_container}>
         <div className={styles.close}>
-            <button><CloseCircle /></button>
+            <button><CloseCircle size={32} /></button>
         </div>
 
         <div className={styles.contents}>
@@ -26,18 +30,18 @@ const Modals = () => {
                 </p>
             </div>
 
-            <div className="social">
-                <Facebook/>
-                <Instagram/>
-                <Twitch/>
-                <LinkCircle/>
+            <div className={styles.social_icons}>
+                  <a href="#" target='_blank'><Image src={icon} /></a>
+                  <a href="" target='_blank'><Image src={icon2} /></a>
+                  <a href="" target='_blank'><Image src={icon3} /></a>
+                  <a href="" target='_blank'><Image src={icon4} /></a>
             </div>
         </div>
 
         <div className={styles.modal_footer}>
-            <ArrowCircleLeft size={32} className={styles.icon} />
+            <ArrowLeft size={32} className={styles.icon} />
             <h4>Abegunye Company Limited</h4>
-            <ArrowCircleRight size={32} className={styles.icon} />
+            <ArrowRight size={32} className={styles.icon} />
         </div>
     </div>
   )
