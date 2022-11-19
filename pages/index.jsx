@@ -1,10 +1,7 @@
 import Head from "next/head";
-<<<<<<< HEAD:pages/index.jsx
 import Event from "../components/Event/Event";
 import Hero from "../components/Hero/Hero";
-=======
 import favicon from "../assets/favicon.webp"
->>>>>>> semight:pages/index.js
 
 const Home = () => {
   return (

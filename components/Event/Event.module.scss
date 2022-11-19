@@ -3,7 +3,7 @@
     height: 100vh;
     background-color: var(--gdg-white);
     display: grid;
-    grid-template-columns: 2fr 4fr;
+    grid-template-columns: 2.5fr 4fr;
 
     aside {
         padding: 2.5rem;
@@ -34,8 +34,12 @@
             }
         }
         .scrollContainer {
-            height: 75vh;
+            height: 65vh;
             overflow-y: scroll;
+
+            .cardWrapper {
+                margin-bottom: 20px;
+            }
         }
     }
 }

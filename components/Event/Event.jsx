@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Card from "../Card/Card";
 import Style from "./Event.module.scss";
 
 function Event() {
@@ -12,17 +13,26 @@ function Event() {
                     <p>Join us for the annual developer festival of sessions, workshops, training, codelabs, and much more by awesome.</p>
                 </section>
                 <section className={Style.scrollContainer}>
-                    {/* working */}
+                    {
+                        [...Array(6)].map((u, i) =>
+                            <div className={Style.cardWrapper}>
+                                <Card
+                                    key={i}
+                                    title={"Join us for the annual"}
+                                    article={"Completed"}
+                                    body={"Adeolu Ademuyiwa"}
+                                />
+                            </div>
+                        )
+                    }
                 </section>
             </aside>
             <aside>
                 <div className={Style.contentDetails}>
-                    <section>
-
-                    </section>
                 </div>
             </aside>
         </div>
+
     )
 }
 
