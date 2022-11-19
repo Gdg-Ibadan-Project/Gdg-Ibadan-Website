@@ -98,7 +98,7 @@ const About = () => {
                 </div>
 
                 <div>
-                    <Image src={globe} />
+                    <Image src={globe} alt="" width='30' height='30' />
                 </div>
             </section>
         </div>

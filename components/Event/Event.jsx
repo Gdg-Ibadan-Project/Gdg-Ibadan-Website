@@ -14,9 +14,8 @@ function Event() {
                 <section className={Style.scrollContainer}>
                     {
                         [...Array(6)].map((u, i) =>
-                            <div className={Style.cardWrapper}>
+                            <div className={Style.cardWrapper} key={i}>
                                 <Card
-                                    key={i}
                                     title={"Join us for the annual"}
                                     article={"Completed"}
                                     body={"Adeolu Ademuyiwa"}

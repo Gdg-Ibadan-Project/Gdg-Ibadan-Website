@@ -1,4 +1,5 @@
-import Image from "../../assets/image.png";
+import Image from "next/image";
+import Pic from "../../assets/image.png";
 import Icon from "../../assets/circle.png";
 import { MdTimer } from "react-icons/md";
 import { BiCalendar } from "react-icons/bi";
@@ -11,14 +12,14 @@ const Card = ({ title, body, article }) => {
       <div className={styles.container}>
         <div className={styles.body}>
           <div className={styles.image}>
-            <img src={Image.src} alt="" />
+            <Image src={Pic.src} alt="" width='30' height='30' />
           </div>
 
           <div className={styles.title}>
             <div className={styles.text}>
               <h1>{title}</h1>
               <div className={styles.right}>
-                <img src={Icon.src} alt="" />
+                <Image src={Icon.src} alt="" width='30' height='30' />
                 <p>{article}</p>
               </div>
             </div>

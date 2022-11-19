@@ -17,7 +17,7 @@ const BottomNav = () => {
       <section>
         <a href="#schedule" data-scroll-to>
           <section className={styles.scrollDown}>
-            <img src="/arrow-down.svg" alt="arrow-down" />
+            <Image src="/arrow-down.svg" alt="arrow-down" width='30' height='30' />
           </section>
         </a>
         <nav>
@@ -25,7 +25,7 @@ const BottomNav = () => {
         </nav>
 
         <div>
-          <button><Image src={play} className={styles.play_icon} alt="play-icon" /></button>
+          <button><Image src={play} className={styles.play_icon} alt="play-icon" width='30' height='30' /></button>
         </div>
       </section>
     </div>
