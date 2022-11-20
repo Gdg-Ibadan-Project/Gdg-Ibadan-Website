@@ -43,8 +43,8 @@ const Layout = ({ children }) => {
     <div id="home" data-scroll-container ref={MainContainer}>
       <Navbar />
       <div className={styles.container}>
-        <Modals />
-        {/* <About /> */}
+        {/* <Modals /> */}
+        <About />
         {/* <BottomNav /> */}
         {children}
       </div>
