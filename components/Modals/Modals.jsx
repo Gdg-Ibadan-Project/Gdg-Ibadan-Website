@@ -14,7 +14,7 @@ import {data} from './data'
 const Modals = () => {
 
     const [details, setDetails] = useState(data)
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const [index, setIndex] = useState(0)
     
     const closeModal = () => {
