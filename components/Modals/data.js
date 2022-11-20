@@ -3,6 +3,7 @@ import image from '../../assets/google.svg'
 
 export const data = [
     {
+        id: 1,
         image:  image,
         title: 'Abegunye Company Limited',
         level: 'Gold Sponsor',
@@ -13,6 +14,7 @@ export const data = [
         linkedIn: 'https://facebook.com/tunde',
     },
     {
+        id: 2,
         image:  image,
         title: 'Ademolas Company Limited',
         level: 'Golden Sponsor',
@@ -23,6 +25,7 @@ export const data = [
         linkedIn: 'https://facebook.com/tunde',
     },
     {
+        id: 3,
         image:  image,
         title: 'Icitify Company Limited',
         level: 'Silver Sponsor',
