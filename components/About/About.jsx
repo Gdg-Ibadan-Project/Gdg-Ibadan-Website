@@ -1,8 +1,8 @@
-import styles from "../styles/About.module.scss";
+import styles from "./About.module.scss";
 import Image from "next/image";
-import globe from "../assets/globe.svg";
+import globe from "../../assets/globe.svg";
 import Head from "next/head";
-import Counter from "../components/Counter/Counter";
+import Counter from "../Counter/Counter";
 
 const About = () => {
   return (
