@@ -3,6 +3,7 @@ import BottomNav from "../components/BottomNav/BottomNav";
 import Modals from "../components/Modals/Modals";
 import Navbar from "../components/Navbar/Navbar";
 import About from "../pages/About";
+import Sponsors from "../pages/Sponsors";
 import styles from "./Layout.module.scss";
 
 const locomotiveScroll =
@@ -42,6 +43,7 @@ const Layout = ({ children }) => {
     <div id="home" data-scroll-container ref={MainContainer}>
       <Navbar />
       <div className={styles.container}>
+        <Sponsors />
         {/* <Modals /> */}
         {/* <About /> */}
         <BottomNav />
