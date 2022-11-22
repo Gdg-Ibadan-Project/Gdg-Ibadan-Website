@@ -1,7 +1,30 @@
+import Styles from "./Gallery.module.scss";
 const gallery = () => {
   return (
-    <div>
-      <h1>This an example of a page (gallery page) component</h1>
+    <div className={Styles.container} id="gallery">
+      <section className={Styles.row}>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+        <div className={Styles.box}></div>
+      </section>
     </div>
   );
 };

@@ -1,0 +1,96 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--gdg-red);
+    padding: 2rem;
+
+    .row {
+        position: relative;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        .box {
+            position: absolute;
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            // display: inline-flex;
+            &:first-child {
+                top: 0;
+                left: 0;
+            }
+            &:nth-child(2) {
+                top: 20px;
+            }
+            &:nth-child(3) {
+                left: 30px;
+            }
+            &:nth-child(4) {
+                right: 20px;
+            }
+            &:nth-child(5) {
+                bottom: 0;
+            }
+            &:nth-child(6) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(7) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(8) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(9) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(10) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(11) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(12) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(13) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(14) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(15) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(16) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(17) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(18) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(19) {
+                right: 0;
+                width: 200px;
+            }
+            &:nth-child(20) {
+                right: 0;
+                width: 200px;
+            }
+        }
+    }
+}
