@@ -54,10 +54,10 @@ const Modals = () => {
                     </div>
 
                     <div className={styles.social_icons}>
-                        <a href={details[index].insta} target='_blank'><Image src={icon} alt="" /></a>
-                        <a href={details[index].linkedIn} target='_blank'><Image src={icon2} alt="" /></a>
-                        <a href={details[index].twitter} target='_blank'><Image src={icon3} alt="" /></a>
-                        <a href={details[index].facebook} target='_blank'><Image src={icon4} alt="" /></a>
+                        <a href={details[index].insta} target='_blank' rel="noreferrer"><Image src={icon} alt="" /></a>
+                        <a href={details[index].linkedIn} target='_blank' rel="noreferrer"><Image src={icon2} alt="" /></a>
+                        <a href={details[index].twitter} target='_blank' rel="noreferrer"><Image src={icon3} alt="" /></a>
+                        <a href={details[index].facebook} target='_blank' rel="noreferrer"><Image src={icon4} alt="" /></a>
                     </div>
                 </div>
 
