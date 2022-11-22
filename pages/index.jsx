@@ -5,6 +5,8 @@ import Hero from "../components/Hero/Hero";
 import favicon from "../assets/favicon.webp"
 import Sponsors from "../components/Sponsors/Sponsors";
 
+
+
 const Home = () => {
   return (
     <div>
