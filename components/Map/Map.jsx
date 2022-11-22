@@ -4,7 +4,7 @@ import styles from "./Map.module.scss";
 
 const Map = () => {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: "AIzaSyAxTrGqIHWJ9D3I6BiL2wHvl6qzE3VNk8w",
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
 
   const MapComponent = () => {
