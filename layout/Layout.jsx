@@ -6,8 +6,6 @@ import About from "../pages/About";
 import Sponsors from "../pages/Sponsors";
 import styles from "./Layout.module.scss";
 
-
-
 const locomotiveScroll =
   typeof window !== "undefined" ? require("locomotive-scroll").default : null;
 
@@ -48,7 +46,7 @@ const Layout = ({ children }) => {
         <Sponsors />
         {/* <Modals /> */}
         {/* <About /> */}
-        {/* <BottomNav /> */}
+        <BottomNav />
         {children}
       </div>
     </div>
