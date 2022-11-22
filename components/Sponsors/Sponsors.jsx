@@ -6,14 +6,14 @@ import { ArrowRight, ArrowLeft } from 'iconsax-react'
 
 const Sponsors = () => {
   return (
-    <div className={styles.sponsor_container}>
+    <div className={styles.sponsor_container} id="sponsors">
       <section className={styles.text_container}>
         <h3>OUR SPONSORS</h3>
         <p>Join us for the annual developer festival of sessions, workshops, training, codelabs, and much more by awesome.</p>
       </section>
 
       <section className={styles.image_container}>
-        <Image src={google} />
+        <Image src={google} alt="" />
         <div className={styles.image_text}>
           <h3>GOOGLE</h3>
           <button>Learn More</button>

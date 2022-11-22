@@ -1,55 +1,61 @@
 .nav_container {
-  position: relative;
+  position: fixed;
+  padding: 0 30px;
+  right: 0;
+  left: 0;
+  // top: 45%;
+  top: 50vw;
   section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    z-index: 999;
+    .scrollDown {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--gdg-white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     nav {
-      // max-width: 500px;
       margin: auto;
       display: flex;
       gap: 9px;
       align-items: center;
       justify-content: center;
-      background-color: #ffffff;
+      background-color: var(--gdg-white);
       padding: 8px;
       border-radius: 100px;
-      color: black;
-      position: fixed;
-      bottom: 5rem;
-      right: 31%;
+      color: var(--gdg-black);
 
       a {
-        border: 1px solid black;
+        border: 1px solid var(--gdg-black);
         padding: 10px 9px;
         border-radius: 100px;
         transition: background-color 0.5s, border 0.3s;
       }
 
       .active {
-        background-color: black;
-        color: white;
+        background-color: var(--gdg-black);
+        color: var(--gdg-white);
       }
 
       a:hover {
-        background-color: black;
-        color: white;
+        background-color: var(--gdg-black);
+        color: var(--gdg-white);
       }
     }
 
     div {
-      position: fixed;
-      bottom: 5rem;
-      right: 5rem;
-
       button {
         display: flex;
         align-items: center;
         justify-content: center;
         background: transparent;
         border: none;
-        color: white;
+        color: var(--gdg-white);
         width: 55px;
         height: 55px;
         border-radius: 50%;
@@ -62,8 +68,7 @@
           #34a853 332.81deg,
           #4285f4 421.15deg
         );
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3),
-          0px 3px 6.24px 0.78px rgba(226, 226, 226, 0.2);
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), 0px 3px 6.24px 0.78px rgba(226, 226, 226, 0.2);
 
         .play_icon {
           width: 23px;

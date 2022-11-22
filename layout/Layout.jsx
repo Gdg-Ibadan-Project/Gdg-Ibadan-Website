@@ -37,13 +37,15 @@ const Layout = ({ children }) => {
     });
   }, []);
   return (
-    <div id="home" data-scroll-container ref={MainContainer}>
-      <Navbar />
-      <div className={styles.container}>
+    <>
+      <div id="home" data-scroll-container ref={MainContainer}>
+        <Navbar />
+        <section className={styles.container}>
+          {children}
+        </section>
         <BottomNav />
-        {children}
       </div>
-    </div>
+    </>
   );
 };
 
