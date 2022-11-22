@@ -1,10 +1,9 @@
 import Head from "next/head";
 import React from "react";
 import { Location, Calendar } from "iconsax-react";
-import styles from "../styles/map.module.scss";
-import Counter from "../components/Counter/Counter";
-import Map from "../components/Map/Map";
-
+import styles from "./map.module.scss";
+import Counter from "../../components/Counter/Counter";
+import Map from "../../components/Map/Map";
 const map = () => {
   return (
     <>

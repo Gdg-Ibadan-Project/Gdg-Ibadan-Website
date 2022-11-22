@@ -1,5 +1,9 @@
 import Head from "next/head";
+import About from "../components/About/About";
+import Event from "../components/Event/Event";
 import Hero from "../components/Hero/Hero";
+import favicon from "../assets/favicon.webp"
+import Sponsors from "../components/Sponsors/Sponsors";
 
 const Home = () => {
   return (
@@ -7,10 +11,13 @@ const Home = () => {
       <Head>
         <title>GDG Ibadan Website</title>
         <meta name="keywords" content="GDG, Ibadan, devfest, community" />
+        <link rel="shortcut icon" href={favicon.src} />
+
       </Head>
       <Hero />
-      {/* <h1>HELLO Dev.</h1>
-      <h1>Pick it up from here</h1> */}
+      <About />
+      <Event />
+      <Sponsors />
     </div>
   );
 };

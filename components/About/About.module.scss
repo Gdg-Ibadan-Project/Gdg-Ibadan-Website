@@ -1,7 +1,10 @@
 .about_container {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 4rem 0 6rem;
+  // background-color: red;
+  width: 100vw;
+  height: 100vh;
+  // max-width: 90%;
+  // margin: 3.7rem auto;
+  padding: 3.7rem;
 
   section {
     display: flex;
@@ -42,6 +45,22 @@
           line-height: 30px;
         }
       }
+    }
+  }
+}
+
+.timer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 300px;
+
+  div {
+    text-align: center;
+
+    h3 {
+      font-size: 36px;
+      letter-spacing: 2px;
     }
   }
 }
