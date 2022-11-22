@@ -5,7 +5,6 @@ import Navbar from "../components/Navbar/Navbar";
 import About from "../pages/About";
 import styles from "./Layout.module.scss";
 
-
 const locomotiveScroll =
   typeof window !== "undefined" ? require("locomotive-scroll").default : null;
 
@@ -43,9 +42,9 @@ const Layout = ({ children }) => {
     <div id="home" data-scroll-container ref={MainContainer}>
       <Navbar />
       <div className={styles.container}>
-        <Modals />
+        {/* <Modals /> */}
         {/* <About /> */}
-        {/* <BottomNav /> */}
+        <BottomNav />
         {children}
       </div>
     </div>

@@ -1,0 +1,15 @@
+.timer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 350px;
+
+  div {
+    text-align: center;
+
+    h3 {
+      font-size: 36px;
+      letter-spacing: 2px;
+    }
+  }
+}
