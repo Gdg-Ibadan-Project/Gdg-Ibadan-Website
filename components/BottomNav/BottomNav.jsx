@@ -5,7 +5,7 @@ import play from '../../assets/play.svg'
 
 
 const BottomNav = () => {
-  const links = ['About', 'Schedule', 'Speakers', 'Sponsors', 'Organizers']
+  const links = ['About', 'Schedule', 'Speakers', 'Sponsors', 'Organizers', 'Gallery']
   const [navIndex, setNavIndex] = useState(-1);
 
   const handleClick = (index) => {
