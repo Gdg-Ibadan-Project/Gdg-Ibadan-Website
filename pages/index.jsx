@@ -3,6 +3,9 @@ import About from "../components/About/About";
 import Event from "../components/Event/Event";
 import Hero from "../components/Hero/Hero";
 import Sponsors from "../components/Sponsors/Sponsors";
+import Gallery from "../components/Gallery/Gallery";
+import favicon from "../assets/favicon.webp"
+import Organizers from "../components/Organizers/Organizers";
 
 
 
@@ -19,6 +22,8 @@ const Home = () => {
       <About />
       <Event />
       <Sponsors />
+      <Gallery />
+      <Organizers />
     </div>
   );
 };

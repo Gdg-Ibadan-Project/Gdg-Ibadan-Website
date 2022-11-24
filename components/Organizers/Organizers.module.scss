@@ -1,6 +1,6 @@
 .organizers_container{
     max-width: 95%;
-    margin: 6rem auto;
+    margin: 4rem auto;
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
@@ -46,6 +46,7 @@
                 width: 370px;
                 height: 350px;
                 margin: auto;
+                margin-bottom: 1rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -56,10 +57,9 @@
                     z-index: -1;
                     left: 250px;
                     width: 300px;
+                    height: 300px;
                     border-radius: 50%;
-                    transition: width .5s,
-                        height .5s,
-                        left .5s;
+                    transition: width 3s, height 3s, left 3s, z-index 3s;
                 }
         
                 .active_image {
@@ -67,9 +67,10 @@
                     position: relative;
                     z-index: 1;
                     width: 370px;
+                    height: 370px;
                     border-radius: 50%;
-                    transition: width .5s,
-                        height .5s,;
+                    transition: width 3s,
+                        height 3s;
                 }
         
                 .next_image {
@@ -78,8 +79,9 @@
                     z-index: -1;
                     right: 250px;
                     width: 300px;
+                    height: 300px;
                     border-radius: 50%;
-                    transition: width .5s, height .5s, right .5s;
+                    transition: width 3s, height 3s, right 3s, z-index 3s;
                 }
             }
     }
