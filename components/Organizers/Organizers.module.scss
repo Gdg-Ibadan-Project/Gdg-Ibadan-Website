@@ -1,0 +1,111 @@
+.organizers_container{
+    max-width: 95%;
+    margin: 6rem auto;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .texts{
+        max-width: 450px;
+        margin-bottom: 2.5rem;
+        div{
+            h2{
+                font-size: 36px;
+                letter-spacing: 1.2px;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .images_container{
+        text-align: center;
+
+        div{
+            h3{
+                font-size: 25px;
+                letter-spacing: 0.8px;
+                margin-bottom: 1rem;
+            }
+
+            div{
+                max-width: 120px;
+                margin: 1rem auto;
+                display: flex;
+                justify-content: space-between;
+
+                a{
+                    img{
+                        width: 30px;
+                    }
+                }
+            }
+        }
+        .images {
+                width: 370px;
+                height: 350px;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        
+                .prev_image {
+                    display: block;
+                    position: relative;
+                    z-index: -1;
+                    left: 250px;
+                    width: 300px;
+                    border-radius: 50%;
+                    transition: width .5s,
+                        height .5s,
+                        left .5s;
+                }
+        
+                .active_image {
+                    display: block;
+                    position: relative;
+                    z-index: 1;
+                    width: 370px;
+                    border-radius: 50%;
+                    transition: width .5s,
+                        height .5s,;
+                }
+        
+                .next_image {
+                    display: block;
+                    position: relative;
+                    z-index: -1;
+                    right: 250px;
+                    width: 300px;
+                    border-radius: 50%;
+                    transition: width .5s, height .5s, right .5s;
+                }
+            }
+    }
+
+    .buttons{
+        // width: 100px;
+
+        div{
+            margin-bottom: 1rem;
+
+            button{
+                background: transparent;
+                border: 1.5px solid white;
+                color: white;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            button:hover{
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 
 import image from '../../assets/google.svg'
+import globe from '../../assets/globe.svg'
+
 
 export const data = [
     {
@@ -15,7 +17,7 @@ export const data = [
     },
     {
         id: 2,
-        image:  image,
+        image:  globe,
         title: 'Ademolas Company Limited',
         level: 'Golden Sponsor',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et ipsam animi ut nostrum iure nemo vel soluta laborum odit fugiat mollitia, eius possimus veniam facere harum accusamus exercitationem voluptatibus dolorum dolores ipsum temporibus architecto eveniet? Labore possimus voluptate nisi alias aspernatur explicabo autem ut non odio quisquam sapiente debitis praesentium ipsum consequuntur culpa impedit voluptatibus ratione nostrum, quos repellat!',
@@ -37,7 +39,7 @@ export const data = [
     },
     {
         id: 4,
-        image:  image,
+        image:  globe,
         title: 'Tickethub Company Limited',
         level: 'Platinum Sponsor',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt et ipsam animi ut nostrum iure nemo vel soluta laborum odit fugiat mollitia, eius possimus veniam facere harum accusamus exercitationem voluptatibus dolorum dolores ipsum temporibus architecto eveniet? Labore possimus voluptate nisi alias aspernatur explicabo autem ut non odio quisquam sapiente debitis praesentium ipsum consequuntur culpa impedit voluptatibus ratione nostrum, quos repellat!',
