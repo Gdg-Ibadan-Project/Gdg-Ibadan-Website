@@ -22,8 +22,8 @@ const Home = () => {
       <About />
       <Event />
       <Sponsors />
-      <Gallery />
       <Organizers />
+      <Gallery />
     </div>
   );
 };

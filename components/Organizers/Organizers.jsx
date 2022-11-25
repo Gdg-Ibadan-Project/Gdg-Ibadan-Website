@@ -1,12 +1,12 @@
 import Image from 'next/image'
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import styles from './Organizers.module.scss'
 import { ArrowRight, ArrowLeft } from 'iconsax-react'
 import icon from '../../assets/icon1.svg'
 import icon2 from '../../assets/icon2.svg'
 import icon3 from '../../assets/icon3.svg'
 import icon4 from '../../assets/icon4.svg'
-import {data} from '../Modals/data'
+import { data } from '../Modals/data'
 
 const Organizers = () => {
   const [organizer, setOrganizer] = useState(data);
@@ -33,42 +33,42 @@ const Organizers = () => {
 
 
   return (
-    <div className={styles.organizers_container}>
-       <div className={styles.texts}>
-            <div>
-                <h2>ORGANIZERS</h2>
-            </div>
+    <div className={styles.organizers_container} id="organizers">
+      <div className={styles.texts}>
+        <div>
+          <h2>ORGANIZERS</h2>
+        </div>
 
-            <p>
-                Join us for the annual developer festival of sessions, workshops, trainings, codelabs and so much more by awesome.
-            </p>
-       </div>
+        <p>
+          Join us for the annual developer festival of sessions, workshops, trainings, codelabs and so much more by awesome.
+        </p>
+      </div>
 
-       <div className={styles.images_container}>
-          <div className={styles.images}>
-              <Image src={organizer[prevIndex].image} className={styles.prev_image} />
-              <Image src={organizer[index].image} className={styles.active_image} />
-              <Image src={organizer[nextIndex].image} className={styles.next_image} />
-          </div>
+      <div className={styles.images_container}>
+        <div className={styles.images}>
+          <Image src={organizer[prevIndex].image} className={styles.prev_image} alt="" />
+          <Image src={organizer[index].image} className={styles.active_image} alt="" />
+          <Image src={organizer[nextIndex].image} className={styles.next_image} alt="" />
+        </div>
+        <div>
+          <h3>{organizer[index].title}</h3>
+          <p>{organizer[index].level}</p>
           <div>
-            <h3>{organizer[index].title}</h3>
-            <p>{organizer[index].level}</p>
-            <div>
-              <a href=""><Image src={icon} /></a>
-              <a href=""><Image src={icon2} /></a>
-              <a href=""><Image src={icon3} /></a>
-            </div>
+            <a href=""><Image src={icon} alt="" /></a>
+            <a href=""><Image src={icon2} alt="" /></a>
+            <a href=""><Image src={icon3} alt="" /></a>
           </div>
-       </div>
+        </div>
+      </div>
 
-       <div className={styles.buttons}>
-         <div>
-            <button onClick={nextImage}><ArrowRight /></button>
-         </div>
-         <div>
-            <button onClick={prevImage}><ArrowLeft /></button>
-         </div>
-       </div>
+      <div className={styles.buttons}>
+        <div>
+          <button onClick={nextImage}><ArrowRight /></button>
+        </div>
+        <div>
+          <button onClick={prevImage}><ArrowLeft /></button>
+        </div>
+      </div>
     </div>
   )
 }
