@@ -31,9 +31,9 @@ const Modals = ({ showModal, setShowModal, index, details, setIndex }) => {
 
     return (
         
-        <div className={styles.modal_container}>
+        <div className={styles.modal_container} data-scroll-sticky>
 
-            { showModal ? <div>
+            {showModal ? <div>
                 
                 <div className={styles.close}>
                     <button onClick={closeModal}><CloseCircle size={32} /></button>
