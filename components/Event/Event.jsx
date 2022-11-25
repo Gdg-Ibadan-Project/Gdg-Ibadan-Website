@@ -7,27 +7,34 @@ function Event() {
     return (
         <div className={Style.container} id="schedule">
             <aside className={Style.aside}>
-                <section>
-                    <h1>EVENT SCHEDULING</h1>
-                    <p>Join us for the annual developer festival of sessions, workshops, training, codelabs, and much more by awesome.</p>
+                <section className={Style.sec}>
+                    <div className={Style.header}>
+                        <h1>Welcome to Devfest Live</h1>
+                        <form action="">
+                            <input type="search" placeholder="Search event by name" />
+                            <select name="" id="">
+                                <option value="">Filter By:</option>
+                                <option value="">Ongoing</option>
+                                <option value="">Completed</option>
+                                <option value="">Upcoming</option>
+                            </select>
+                        </form>
+                    </div>
                 </section>
                 <section className={Style.scrollContainer}>
                     {
-                        [...Array(6)].map((u, i) =>
+                        [...Array(4)].map((u, i) =>
                             <div className={Style.cardWrapper} key={i}>
-                                <Card
+                                {/* <Card
                                     title={"Join us for the annual"}
                                     article={"Completed"}
                                     body={"Adeolu Ademuyiwa"}
-                                />
+                                /> */}
+                                <Card type={'completed'} />
                             </div>
                         )
                     }
                 </section>
-            </aside>
-            <aside>
-                <div className={Style.contentDetails}>
-                </div>
             </aside>
         </div>
 
