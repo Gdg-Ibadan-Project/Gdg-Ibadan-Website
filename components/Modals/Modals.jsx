@@ -30,17 +30,17 @@ const Modals = ({ showModal, setShowModal, index, details, setIndex }) => {
     }
 
     return (
-        
-        <div className={styles.modal_container} data-scroll-sticky>
+
+        <div className={styles.modal_container} data-scroll data-scroll-sticky data-scroll-target="#sponsors">
 
             {showModal ? <div>
-                
+
                 <div className={styles.close}>
                     <button onClick={closeModal}><CloseCircle size={32} /></button>
                 </div>
                 <div className={styles.contents}>
                     <div className={styles.sponsor_image}>
-                        <Image src={ details[index].image}/>
+                        <Image src={details[index].image} alt="" />
                     </div>
 
                     <div className={styles.texts}>

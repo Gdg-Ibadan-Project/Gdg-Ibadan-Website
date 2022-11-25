@@ -1,12 +1,13 @@
 .sponsor_container {
     max-width: 95%;
     margin: auto;
-    position: relative;
+    // position: relative;
     display: flex;
     height: 90vh;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    // border: 1px solid red;
 
     section {
         h3 {

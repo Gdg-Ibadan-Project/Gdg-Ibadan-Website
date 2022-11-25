@@ -33,6 +33,7 @@ const Organizers = () => {
 
 
   return (
+    // <div data-scroll-section>
     <div className={styles.organizers_container} id="organizers">
       <div className={styles.texts}>
         <div>
@@ -70,6 +71,7 @@ const Organizers = () => {
         </div>
       </div>
     </div>
+    // </div>
   )
 }
 
