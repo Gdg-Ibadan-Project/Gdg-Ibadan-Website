@@ -5,6 +5,7 @@ import Hero from "../components/Hero/Hero";
 import Sponsors from "../components/Sponsors/Sponsors";
 import Gallery from "../components/Gallery/Gallery";
 import favicon from "../assets/favicon.webp"
+import Organizers from "../components/Organizers/Organizers";
 
 
 
@@ -21,6 +22,7 @@ const Home = () => {
       <About />
       <Event />
       <Sponsors />
+      <Organizers />
       <Gallery />
     </div>
   );

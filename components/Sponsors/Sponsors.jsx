@@ -1,13 +1,21 @@
 import Image from 'next/image'
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import styles from './Sponsor.module.scss'
-import google from '../../assets/google.svg'
+// import google from '../../assets/google.svg'
 import { ArrowRight, ArrowLeft } from 'iconsax-react'
-import {data} from '../Modals/data'
+import { data } from '../Modals/data'
 import Modals from '../Modals/Modals'
 
+// const locomotiveScroll =
+//   typeof window !== "undefined" ? require("locomotive-scroll").default : null;
 
 const Sponsors = () => {
+  // let locoScroll;
+  // useEffect(() => {
+  //   locoScroll = new locomotiveScroll({
+  //     reloadOnContextChange: true,
+  //   })
+  // }, [])
 
   const [details, setDetails] = useState(data);
   const [index, setIndex] = useState(0);
@@ -27,9 +35,11 @@ const Sponsors = () => {
   }
 
   const openModal = () => {
+    // locomotiveScroll.stop();
+    // locoScroll.stop()
     setShowModal(true);
   }
-  
+
   return (
     <>
       <div className={styles.sponsor_container} id="sponsors">
