@@ -97,7 +97,7 @@ const About = () => {
           </div>
         </div>
 
-        <div>
+        <div className={styles.devfest}>
           <Image src={globe} alt="" width='407' height='407' />
         </div>
       </section>

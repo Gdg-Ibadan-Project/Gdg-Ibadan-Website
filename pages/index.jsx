@@ -6,6 +6,7 @@ import Sponsors from "../components/Sponsors/Sponsors";
 import Gallery from "../components/Gallery/Gallery";
 import favicon from "../assets/favicon.webp"
 import Organizers from "../components/Organizers/Organizers";
+import Speakers from "../components/Speakers/Speakers";
 
 
 
@@ -24,6 +25,7 @@ const Home = () => {
       <Sponsors />
       <Organizers />
       <Gallery />
+      <Speakers />
     </div>
   );
 };

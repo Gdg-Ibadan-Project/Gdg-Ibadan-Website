@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import styles from './Sponsor.module.scss'
-// import google from '../../assets/google.svg'
 import { ArrowRight, ArrowLeft } from 'iconsax-react'
 import { data } from '../Modals/data'
 import Modals from '../Modals/Modals'
