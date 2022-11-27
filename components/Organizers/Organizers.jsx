@@ -10,7 +10,6 @@ import { data } from '../Modals/data'
 
 const Organizers = () => {
   const [organizer, setOrganizer] = useState(data);
-
   const [prevIndex, setPrevIndex] = useState(0)
   const [index, setIndex] = useState(1)
   const [nextIndex, setNextIndex] = useState(2)

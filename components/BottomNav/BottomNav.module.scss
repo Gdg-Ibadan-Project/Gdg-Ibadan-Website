@@ -82,6 +82,17 @@
 
 @media screen and (max-width: 750px) {
   .nav_container{
-    display: none;
+    section{
+      display: flex;
+      flex-direction: column;
+
+      div{
+        margin-top: 50%;
+      }
+
+      a, nav{
+        display: none;
+      }
+    }
   }
 }

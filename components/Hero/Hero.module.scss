@@ -10,7 +10,7 @@
     // box-shadow: inset 0px 0px 250px #000000;
 
     p {
-        font-size: 2vw;
+        font-size: 35px;
         margin-bottom: 40px;
     }
 
@@ -26,6 +26,25 @@
             position: absolute;
             right: 25px;
             bottom: -36px;
+        }
+    }
+}
+
+.container{
+    p{
+        font-size: 1.2rem;
+    }
+
+    section{
+        width: 70%;
+        h1{
+            font-size: 30px;
+        }
+
+        img{
+            position: absolute;
+            bottom: -50px;
+            right: 20px;
         }
     }
 }
