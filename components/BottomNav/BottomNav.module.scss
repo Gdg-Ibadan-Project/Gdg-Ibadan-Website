@@ -79,3 +79,20 @@
     }
   }
 }
+
+@media screen and (max-width: 750px) {
+  .nav_container{
+    section{
+      display: flex;
+      flex-direction: column;
+
+      div{
+        margin-top: 50%;
+      }
+
+      a, nav{
+        display: none;
+      }
+    }
+  }
+}
