@@ -4,6 +4,7 @@ import Image from 'next/image'
 import icon from '../../assets/social-1.svg'
 import icon2 from '../../assets/social-2.svg'
 import icon3 from '../../assets/social-3.svg'
+import { ArrowRight, ArrowLeft } from 'iconsax-react'
 import icon4 from '../../assets/social-4.svg'
 import {data} from '../Modals/data'
 
@@ -20,14 +21,13 @@ const Speakers = () => {
     setNextIndex((nextIndex + 1) % images.length);
   }
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextImage();
-    }, 1500);
-
-    return () => clearInterval(interval)
-  }, [index, prevIndex, nextIndex])
-
+  const prevImage = () => {
+    setImages(prev => {
+      const last = prev[prev.length - 1];
+      const others = prev.slice(0, prev.length - 1);
+      return [last, ...others]
+    })
+  }
  
   return (
     <div className={styles.speakers_container}>
@@ -45,21 +45,28 @@ const Speakers = () => {
          
         </div>
 
-        <div className={styles.active}>
-          <Image src={images[index].image } />
           <div>
-            <h3>{images[index].title}</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sed ut facilis laborum quas maiores corporis qui amet, sequi autem voluptatibus, alias maxime, saepe necessitatibus quod officiis impedit quos magni.
-            </p>
-          </div>
+            <div className={styles.active}>
 
-          <div className={styles.icons}>
-            <a href=""><Image src={icon} alt="" /></a>
-            <a href=""><Image src={icon2} alt="" /></a>
-            <a href=""><Image src={icon3} alt="" /></a>
+              <Image src={images[index].image } />
+              <div>
+                <h3>{images[index].title}</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sed ut facilis laborum quas maiores corporis qui amet, sequi autem voluptatibus, alias maxime, saepe necessitatibus quod officiis impedit quos magni.
+                </p>
+              </div>
+
+              <div className={styles.icons}>
+                <a href=""><Image src={icon} alt="" /></a>
+                <a href=""><Image src={icon2} alt="" /></a>
+                <a href=""><Image src={icon3} alt="" /></a>
+              </div>
+            </div>
+            <div className={styles.controls}>
+                <button onClick={prevImage} className={styles.first}><ArrowLeft /></button>
+                <button onClick={nextImage} className={styles.second}><ArrowRight /></button>
+            </div>
           </div>
-        </div>
 
         <div className={styles.next}>
           <Image src={images[nextIndex].image} />

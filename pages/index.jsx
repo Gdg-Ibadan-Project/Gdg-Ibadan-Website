@@ -24,8 +24,8 @@ const Home = () => {
       <Event />
       <Sponsors />
       <Organizers />
-      <Gallery />
       <Speakers />
+      <Gallery />
     </div>
   );
 };
