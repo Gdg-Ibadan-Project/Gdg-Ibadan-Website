@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Organizers.module.scss'
 import { ArrowRight, ArrowLeft } from 'iconsax-react'
 import icon from '../../assets/icon1.svg'
@@ -29,6 +29,16 @@ const Organizers = () => {
     setPrevIndex((prevIndex + 1) % organizer.length);
     setNextIndex((nextIndex + 1) % organizer.length);
   }
+
+  useEffect(() => {
+    if(window.innerWidth <= 600){
+      const interval = setInterval(() => {
+        nextImage();
+      }, 2000)
+
+      return () => clearInterval(interval);
+    }
+  }, [index, prevIndex, nextIndex])
 
 
   return (

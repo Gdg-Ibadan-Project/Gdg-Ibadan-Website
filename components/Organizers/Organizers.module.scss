@@ -1,8 +1,7 @@
 .organizers_container {
-    max-width: 95%;
+    max-width: 90%;
     margin: 4rem auto;
     height: 90vh;
-    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,6 +10,7 @@
     .texts {
         max-width: 450px;
         margin-bottom: 2.5rem;
+        line-height: 2rem;
         div {
             h2 {
                 font-size: 36px;
@@ -60,6 +60,7 @@
                 width: 300px;
                 height: 300px;
                 border-radius: 50%;
+                border: 5px solid tomato;
                 transition: width 3s, height 3s, left 3s, z-index 3s;
             }
 
@@ -70,6 +71,7 @@
                 width: 370px;
                 height: 370px;
                 border-radius: 50%;
+                border: 5px solid tomato;
                 transition: width 3s, height 3s;
             }
 
@@ -81,13 +83,14 @@
                 width: 300px;
                 height: 300px;
                 border-radius: 50%;
+                border: 5px solid tomato;
                 transition: width 3s, height 3s, right 3s, z-index 3s;
             }
         }
+
     }
 
     .buttons {
-        // width: 100px;
 
         div {
             margin-bottom: 1rem;
@@ -114,7 +117,6 @@
 
 @media screen and (max-width: 600px) {
     .organizers_container{
-        padding: 0 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -125,22 +127,30 @@
         }
 
         .images_container{
+
+            div{
+                h3{
+                    font-size: 1.3rem;
+                    text-align: center;
+                }
+            }
             .images{
+                height: 280px;
                 .prev_image {
-                    width: 250px;
-                    height: 250px;
-                    left: 200px;
+                    width: 210px;
+                    height: 210px;
+                    left: 190px;
                 }
 
                 .next_image{
-                    width: 250px;
-                    height: 250px;
-                    right: 200px;
+                    width: 210px;
+                    height: 210px;
+                    right: 190px;
                 }
                 
                 .active_image {
-                    width: 310px;
-                    height: 310px;
+                    width: 250px;
+                    height: 250px;
                 }
             }
         }
