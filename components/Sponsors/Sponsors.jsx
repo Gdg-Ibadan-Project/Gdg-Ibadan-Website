@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Sponsor.module.scss'
 import { ArrowRight, ArrowLeft } from 'iconsax-react'
 import { data } from '../Modals/data'
@@ -32,6 +32,16 @@ const Sponsors = () => {
   const nextDetails = () => {
     setIndex((index + 1) % details.length);
   }
+
+  useEffect(() => {
+    if (window.innerWidth <= 600) {
+        const interval = setInterval(() => {
+          nextDetails()
+        }, 2000)
+
+        return () => clearInterval(interval)
+    }
+  }, [index])
 
   const openModal = () => {
     // locomotiveScroll.stop();

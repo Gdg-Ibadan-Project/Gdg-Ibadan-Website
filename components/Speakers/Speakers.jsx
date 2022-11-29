@@ -21,13 +21,22 @@ const Speakers = () => {
     setNextIndex((nextIndex + 1) % images.length);
   }
 
-  const prevImage = () => {
-    setImages(prev => {
-      const last = prev[prev.length - 1];
-      const others = prev.slice(0, prev.length - 1);
-      return [last, ...others]
-    })
-  }
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextImage();
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [index, nextIndex, prevIndex])
+  
+
+
+  // const prevImage = () => {
+  //   setImages(prev => {
+  //     const last = prev[prev.length - 1];
+  //     const others = prev.slice(0, prev.length - 1);
+  //     return [last, ...others]
+  //   })
+  // }
  
   return (
     <div className={styles.speakers_container}>
@@ -62,10 +71,10 @@ const Speakers = () => {
                 <a href=""><Image src={icon3} alt="" /></a>
               </div>
             </div>
-            <div className={styles.controls}>
+            {/* <div className={styles.controls}>
                 <button onClick={prevImage} className={styles.first}><ArrowLeft /></button>
                 <button onClick={nextImage} className={styles.second}><ArrowRight /></button>
-            </div>
+            </div> */}
           </div>
 
         <div className={styles.next}>
