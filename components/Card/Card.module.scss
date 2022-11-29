@@ -10,7 +10,7 @@
     color: #202124;
     padding: 20px;
     cursor: pointer;
-    transition: all 300ms ease-in-out;
+    transition: all 3s ease;
 
     &__header {
         width: 100%;
@@ -72,7 +72,7 @@
     }
 
     &__body {
-        transition: all 300ms ease-in-out;
+        transition: all 3s ease;
         display: none;
         grid-template-columns: 4fr 1fr;
         justify-content: center;
@@ -112,6 +112,7 @@
     &:hover {
         .container__body {
             display: grid;
+            transition: all 3s ease;
         }
     }
 }

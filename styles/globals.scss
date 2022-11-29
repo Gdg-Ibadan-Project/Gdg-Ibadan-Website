@@ -5,6 +5,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto Mono", monospace, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 :root {

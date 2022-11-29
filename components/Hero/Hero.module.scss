@@ -1,10 +1,12 @@
 .container {
+    
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    // background-color: red;
     // background: linear-gradient(180deg, rgba(0, 0, 0, 1e-6) 0%, rgba(0, 0, 0, 0) 100%);
     mix-blend-mode: multiply;
     // box-shadow: inset 0px 0px 250px #000000;
@@ -12,6 +14,8 @@
     p {
         font-size: 25px;
         margin-bottom: 40px;
+        // color: white;
+        
     }
 
     section {
@@ -21,6 +25,7 @@
         h1 {
             text-align: center;
             font-size: 35px;
+           
         }
         img {
             position: absolute;

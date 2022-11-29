@@ -39,7 +39,7 @@ const Speakers = () => {
   // }
  
   return (
-    <div className={styles.speakers_container}>
+    <div className={styles.speakers_container} id='speakers'>
        <div className={styles.images_container}>
 
         <div className={styles.prev}>

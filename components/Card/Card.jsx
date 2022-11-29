@@ -30,7 +30,7 @@ const Card = ({ title, body, article, type }) => {
             </li>
           </ul>
         </header>
-        <div className={styles["container__body"]}>
+        <div className={ `${styles["container__body"]} animate__animated animate__zoomIn` }>
           <article>
             This talk by Adeolu Ademuyiwa is going to present a deep dive into te new updates that has been made to react in 2022. This would help you learn how to beeter handle frontend issues wth react. The speaker Adeolu Ademuyiwa is a Principal frontend engineer with Meta. He has 15+ years of experience working in big tech. This talk by Adeolu Ademuyiwa is going to present a deep dive into te new updates that has been made to react in 2022.
           </article>

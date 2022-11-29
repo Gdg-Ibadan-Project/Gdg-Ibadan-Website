@@ -18,11 +18,14 @@
         .prev{
             position: relative;
             left: 50px;
+            overflow: hidden;
+           
         }
 
         .next{
             position: relative;
             right: 50px;
+            overflow: hidden;
         }
         .prev, .next{
             width: 230px;

@@ -2,7 +2,14 @@ import Card from "../Card/Card";
 import Style from "./Event.module.scss";
 
 function Event() {
+
     // const [state, setstate] = useState(initialState);
+
+
+    const onChangeHandler = () => {
+        alert('I was changed!')
+        
+    }
 
     return (
         <div className={Style.container} id="schedule">
@@ -12,7 +19,7 @@ function Event() {
                         <h1>Welcome to Devfest Live</h1>
                         <form action="">
                             <input type="search" placeholder="Search event by name" />
-                            <select name="" id="">
+                            <select name="" id="" onChange={()=>alert('I was changed')}>
                                 <option value="">Filter By:</option>
                                 <option value="">Ongoing</option>
                                 <option value="">Completed</option>
