@@ -1,5 +1,13 @@
 .map__container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: -2;
+}
+
+.loading__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

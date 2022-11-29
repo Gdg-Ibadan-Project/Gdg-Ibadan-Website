@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
 import styles from "./Map.module.scss";
+import Loading from "./Loading";
 
 const Map = () => {
   const { isLoaded } = useLoadScript({
@@ -21,7 +22,7 @@ const Map = () => {
     );
   };
 
-  return !isLoaded ? <div>Loading...</div> : <MapComponent />;
+  return !isLoaded ? <Loading /> : <MapComponent />;
 };
 
 export default Map;
