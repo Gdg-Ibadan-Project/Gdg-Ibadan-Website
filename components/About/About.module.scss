@@ -32,6 +32,12 @@
           font-size: 36px;
         }
 
+        @media screen and (max-width: 600px) {
+          h2{
+            font-size: 30px;
+          }
+        }
+
         .outline {
           color: black;
           -webkit-text-stroke: 0.7px white;
@@ -62,5 +68,25 @@
       font-size: 36px;
       letter-spacing: 2px;
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about_container{
+    padding: 3.7rem 2rem;
+
+    .timer{
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+
+    div{
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .devfest{
+    display: none;
+  }
   }
 }

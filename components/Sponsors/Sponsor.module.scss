@@ -17,6 +17,12 @@
             margin-bottom: 1rem;
         }
 
+        @media screen and (max-width: 600px) {
+            h3{
+                font-size: 33px;
+            }
+        }
+
         p {
             line-height: 1.5rem;
         }
@@ -53,6 +59,7 @@
             h4 {
                 margin-bottom: 1rem;
                 letter-spacing: 0.03rem;
+                font-size: 25px;
             }
 
             button {
@@ -89,6 +96,19 @@
         div:hover {
             background-color: white;
             color: black;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .sponsor_container{
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .button_container{
+            display: none;
         }
     }
 }

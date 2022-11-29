@@ -111,3 +111,38 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .organizers_container{
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto;
+
+        .buttons{
+            display: none;
+        }
+
+        .images_container{
+            .images{
+                .prev_image {
+                    width: 250px;
+                    height: 250px;
+                    left: 200px;
+                }
+
+                .next_image{
+                    width: 250px;
+                    height: 250px;
+                    right: 200px;
+                }
+                
+                .active_image {
+                    width: 310px;
+                    height: 310px;
+                }
+            }
+        }
+    }
+}
