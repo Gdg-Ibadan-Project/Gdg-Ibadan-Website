@@ -1,5 +1,13 @@
 .container {
   
-  background-color: transparent;
+  // background-color:red;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1e-06) 0%, rgba(0, 0, 0, 0) 100%);
+mix-blend-mode: multiply;
+box-shadow: inset 0px 0px 250px #000000;
+
+// background: #EB5757;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #000000, #EB5757); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 }

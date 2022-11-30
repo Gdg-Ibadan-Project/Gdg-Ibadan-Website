@@ -1,3 +1,5 @@
+@import '../../styles/abstracts/mixins';
+
 .sponsor_container {
     max-width: 90%;
     margin: auto;
@@ -19,13 +21,15 @@
         }
 
         @media screen and (max-width: 600px) {
-            h3{
-                font-size: 33px;
+            h2{
+                font-size: 36px;
+                text-align: center;
+                margin-bottom: 1rem;
             }
         }
 
         p {
-            line-height: 1.5rem;
+            line-height: 2rem;
         }
     }
 

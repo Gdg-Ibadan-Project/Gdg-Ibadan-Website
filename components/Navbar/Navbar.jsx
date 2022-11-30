@@ -9,6 +9,8 @@ import styles from './Navbar.module.scss'
 import { Location, Calendar, TextalignJustifyright } from 'iconsax-react'
 import close from '../../public/close.svg'
 
+import favicon from "../../assets/favicon.webp"
+
 
 const Navbar = () => {
 
@@ -24,13 +26,15 @@ const Navbar = () => {
   const { pathname } = router;
 
   return (
-    <nav className={styles.navbar_container} data-scroll data-scroll-sticky data-scroll-target="#home">
+    <nav style={(navToggle ? {visibility:'hidden'} : {visibility:'visible'})} className={styles.navbar_container} data-scroll data-scroll-sticky data-scroll-target="#home">
       {pathname === '/' ?
         <a href="#home" data-scroll-to rel="noreferrer">
-          <h1> GDG IBADAN </h1>
+          {/* <h1> GDG IBADAN </h1> */}
+          <Image src={favicon.src} height={50} width={50}></Image>
         </a>
         : <Link href="/">
-          <h1> GDG IBADAN </h1>
+          {/* <h1> GDG IBADAN </h1> */}
+          <Image src={favicon.src} height={50} width={50}></Image>
         </Link>}
 
       <div className={styles.calendar}>
@@ -62,11 +66,11 @@ export const MobileNavigation = () => {
 
   return (
   
-    <div className={`${styles.mobile_navbar}  animate__animated  ${navToggle ? 'animate__fadeInRight' : 'animate__fadeOutRight'}`}  style={( navToggle ? {display:'block'} : {display:""})}>
+    <div className={`${styles.mobile_navbar}  animate__animated  ${navToggle ? 'animate__fadeInRight' : 'animate__fadeOutRight'}`}  style={( navToggle ? {display:'block'} : {visibility:"hidden"})}>
 
       
       <div onClick={()=> setNavToggle(!navToggle)} >
-        <Image src={close} width={50} height={50} alt='navigation close'></Image>
+        <Image src={close} width={40} height={40} alt='navigation close'></Image>
       </div>
       
       <nav>

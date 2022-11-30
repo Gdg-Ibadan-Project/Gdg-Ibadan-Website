@@ -53,7 +53,7 @@ const Sponsors = () => {
     <>
       <div className={styles.sponsor_container} id="sponsors">
         <section className={styles.text_container}>
-          <h3>OUR SPONSORS</h3>
+          <h2>OUR SPONSORS</h2>
           <p>Join us for the annual developer festival of sessions, workshops, training, codelabs, and much more by awesome.</p>
         </section>
 
