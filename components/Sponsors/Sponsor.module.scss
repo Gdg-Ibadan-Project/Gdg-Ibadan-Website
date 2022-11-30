@@ -87,6 +87,7 @@
     }
 
     .button_container {
+
         div {
             margin-bottom: 0.8rem;
             border: 1.5px solid white;
@@ -96,14 +97,33 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: all .3s ease;
             button {
                 background: transparent;
                 border: none;
                 color: white;
+                transition: all .3s ease;
             }
+
+        // div {
+        //     margin-bottom: 1rem;
+
+        //     button {
+        //         background: transparent;
+        //         border: 1.5px solid white;
+        //         color: white;
+        //         border-radius: 50%;
+        //         width: 40px;
+        //         height: 40px;
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: center;
+        //         transition: all .3s ease;
+        //     }
 
             button:hover {
                 color: black;
+                cursor: pointer;
             }
         }
 

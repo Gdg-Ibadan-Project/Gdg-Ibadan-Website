@@ -6,10 +6,10 @@ import icon from '../../assets/icon1.svg'
 import icon2 from '../../assets/icon2.svg'
 import icon3 from '../../assets/icon3.svg'
 import icon4 from '../../assets/icon4.svg'
-import { data } from '../Modals/data'
+import { organisersData } from '../Modals/data'
 
 const Organizers = () => {
-  const [organizer, setOrganizer] = useState(data);
+  const [organizer, setOrganizer] = useState(organisersData);
   const [prevIndex, setPrevIndex] = useState(0)
   const [index, setIndex] = useState(1)
   const [nextIndex, setNextIndex] = useState(2)

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { useRouter } from "next/router"
-import {useContext} from 'react'
+import {useContext , useState } from 'react'
 import { NavigationContext } from '../../context/Navigation.context'
 
 import styles from './Navbar.module.scss'
@@ -58,6 +58,8 @@ const Navbar = () => {
 
 
 export const MobileNavigation = () => {
+
+  const [clicked , setClicked] = useState(false)
   
   const navigationState = useContext(NavigationContext)
 
@@ -66,10 +68,10 @@ export const MobileNavigation = () => {
 
   return (
   
-    <div className={`${styles.mobile_navbar}  animate__animated  ${navToggle ? 'animate__fadeInRight' : 'animate__fadeOutRight'}`}  style={( navToggle ? {display:'block'} : {visibility:"hidden"})}>
+    <div className={`${styles.mobile_navbar}  animate__animated  ${navToggle ? 'animate__fadeInRight' : ''}`}   style={( navToggle ? {display:'block'} : {visibility:"hidden"})}>
 
       
-      <div onClick={()=> setNavToggle(!navToggle)} >
+      <div onClick={() => { setNavToggle(!navToggle);  setClicked(!clicked)}} >
         <Image src={close} width={40} height={40} alt='navigation close'></Image>
       </div>
       

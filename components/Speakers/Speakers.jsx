@@ -6,11 +6,11 @@ import icon2 from '../../assets/social-2.svg'
 import icon3 from '../../assets/social-3.svg'
 import { ArrowRight, ArrowLeft } from 'iconsax-react'
 import icon4 from '../../assets/social-4.svg'
-import {data} from '../Modals/data'
+import {speakersData} from '../Modals/data'
 
 
 const Speakers = () => {
-  const [images, setImages] = useState(data);
+  const [images, setImages] = useState(speakersData);
   const [prevIndex, setPrevIndex] = useState(0)
   const [index, setIndex] = useState(1)
   const [nextIndex, setNextIndex] = useState(2)
