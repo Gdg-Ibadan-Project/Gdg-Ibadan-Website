@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import BottomNav from "../components/BottomNav/BottomNav";
 
-import Navbar from "../components/Navbar/Navbar";
+import Navbar, { MobileNavigation } from "../components/Navbar/Navbar";
 import styles from "./Layout.module.scss";
 
 const locomotiveScroll =
@@ -41,6 +41,7 @@ const Layout = ({ children }) => {
   return (
     <>
         <div id="home" data-scroll-container ref={MainContainer}>
+          <MobileNavigation/>
           <Navbar />
           <section className={styles.container}>
             {children}

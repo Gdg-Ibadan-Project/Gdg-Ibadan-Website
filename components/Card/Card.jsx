@@ -13,7 +13,7 @@ const Card = ({ title, body, article, type }) => {
           <div className={styles["container__header--dot"]}>
             <span className={styles[`${type}`]}></span> {type.toLowerCase()}
           </div>
-          <h3>Frontend Optimization with React</h3>
+          <h3>{ title}</h3>
           <p>Joshua Olajide</p>
           <ul className={styles["container__header--footer"]}>
             <li>

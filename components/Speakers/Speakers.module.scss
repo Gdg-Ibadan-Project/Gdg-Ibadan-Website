@@ -207,6 +207,7 @@
             justify-content: center;
             max-width: 800px;
             margin: auto;
+            order: 2;
 
             .prev, .next{
                 display: none;
@@ -224,6 +225,7 @@
 
         .text{
             margin-bottom: 3rem;
+            order: 1;
 
             div{
                 h2{

@@ -25,7 +25,7 @@ const Home = () => {
   />
 
       </Head>
-      <MobileNavigation/>
+      {/* <MobileNavigation/> */}
       <Hero />
       <About />
       <Event />
