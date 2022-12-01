@@ -108,9 +108,10 @@
             align-content: center;
             align-items: center;
             justify-content: space-between;
-            margin: 20vh 0 0 0;
+            // margin: 20vh 0 0 0;
+            margin-top: calc(6vh + 5em);
 
-            gap: 3em;
+            gap: calc(2vh + 1em);
 
         }
     }
