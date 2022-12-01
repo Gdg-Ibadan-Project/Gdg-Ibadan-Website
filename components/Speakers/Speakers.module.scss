@@ -6,6 +6,7 @@
     max-width: 90%;
     margin: 5rem auto;
     height: 90vh;
+  
     
 
     .images_container{
@@ -18,11 +19,14 @@
         .prev{
             position: relative;
             left: 50px;
+            overflow: hidden;
+           
         }
 
         .next{
             position: relative;
             right: 50px;
+            overflow: hidden;
         }
         .prev, .next{
             width: 230px;
@@ -182,7 +186,7 @@
         }
 
         p{
-            line-height: 1.5rem;
+            line-height: 2rem;
             font-size: 14px;
         }
     }
@@ -203,6 +207,7 @@
             justify-content: center;
             max-width: 800px;
             margin: auto;
+            order: 2;
 
             .prev, .next{
                 display: none;
@@ -220,10 +225,12 @@
 
         .text{
             margin-bottom: 3rem;
+            order: 1;
 
             div{
                 h2{
-                    font-size: 30px;
+                    font-size: 36px;
+                    text-align: center;
                 }
             }
         }

@@ -5,7 +5,7 @@
   left: 0;
   z-index: 800;
   // top: 45%;
-  top: 50vw;
+  top: 85vh;
   section {
     display: flex;
     justify-content: space-between;
@@ -83,7 +83,7 @@
 @media screen and (max-width: 750px) {
   .nav_container{
     section{
-      display: flex;
+      height: 0;
       flex-direction: column;
 
       div{
@@ -94,5 +94,7 @@
         display: none;
       }
     }
+
+  
   }
 }

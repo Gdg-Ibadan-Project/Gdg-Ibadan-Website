@@ -28,6 +28,7 @@
                 font-size: 25px;
                 letter-spacing: 0.8px;
                 margin-bottom: 1rem;
+               
             }
 
             div {
@@ -105,11 +106,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                transition: all .3s ease;
             }
 
             button:hover {
                 background-color: white;
                 color: black;
+                cursor: pointer;
             }
         }
     }
@@ -121,6 +124,10 @@
         justify-content: center;
         align-items: center;
         margin: 5rem auto;
+
+        h2{
+            text-align: center;
+        }
 
         .buttons{
             display: none;

@@ -1,4 +1,6 @@
 import Head from "next/head";
+import { MobileNavigation } from "../components/Navbar/Navbar";
+
 import About from "../components/About/About";
 import Event from "../components/Event/Event";
 import Hero from "../components/Hero/Hero";
@@ -17,8 +19,13 @@ const Home = () => {
         <title>GDG Ibadan Website</title>
         <meta name="keywords" content="GDG, Ibadan, devfest, community" />
         <link rel="shortcut icon" href={favicon.src} />
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
       </Head>
+      {/* <MobileNavigation/> */}
       <Hero />
       <About />
       <Event />

@@ -19,12 +19,22 @@
         flex-direction: column;
         gap: 20px;
 
+        @include respond (phone){
+            // padding: 2em .5em ;
+            padding: 2em 0  ;
+        }
+
         section.sec {
             margin-bottom: 20px;
 
             h1 {
                 margin-bottom: 10px;
                 font-size: 28px;
+                color: white;
+
+                @include respond(phone){
+                    text-align: center;
+                }
             }
             p {
                 letter-spacing: 0.03em;
@@ -43,7 +53,13 @@
                         input {
                             width: 100%;
                         }
+
+                       
                     }
+
+
+
+                   
                 }
 
                 form {
@@ -51,6 +67,11 @@
                     align-items: center;
                     flex-wrap: wrap;
                     gap: 15px;
+
+                    @include respond(phone){
+                      justify-items: center;
+                    //   margin: ;
+                    }
                     input {
                         border: none;
                         outline: none;
@@ -60,6 +81,10 @@
                         width: 400px;
                         background-color: transparent;
                         color: var(--gdg-grey-200);
+
+                        @include respond(phone){
+                            width: 90vw;
+                        }
                     }
                     select {
                         padding: 14px 8px;
@@ -77,8 +102,14 @@
             grid-template-columns: 1fr;
             gap: 20px;
             // background-color: green;
-            width: 100%;
+            // width: 100vw;
             height: auto;
+
+            @include respond(phone){
+                // margin: 0 auto;
+                justify-items: center;
+                align-items: center;
+            }
 
             .cardWrapper {
                 margin-bottom: 20px;

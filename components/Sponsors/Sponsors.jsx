@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React, { useState, useEffect, useCallback } from 'react'
 import styles from './Sponsor.module.scss'
 import { ArrowRight, ArrowLeft } from 'iconsax-react'
-import { data } from '../Modals/data'
+import { sponsorsData } from '../Modals/data'
 import Modals from '../Modals/Modals'
 
 // const locomotiveScroll =
@@ -16,7 +16,7 @@ const Sponsors = () => {
   //   })
   // }, [])
 
-  const [details, setDetails] = useState(data);
+  const [details, setDetails] = useState(sponsorsData);
   const [index, setIndex] = useState(0);
   const [showModal, setShowModal] = useState(false);
 
@@ -53,12 +53,16 @@ const Sponsors = () => {
     <>
       <div className={styles.sponsor_container} id="sponsors">
         <section className={styles.text_container}>
-          <h3>OUR SPONSORS</h3>
+          <h2>OUR SPONSORS</h2>
           <p>Join us for the annual developer festival of sessions, workshops, training, codelabs, and much more by awesome.</p>
         </section>
 
         <section className={styles.image_container}>
-          <Image src={details[index].image} alt="" />
+          <div className={styles.image_holder}>
+          <Image  src={details[index].image} alt="" />
+
+          </div>
+       
           <div className={styles.image_text}>
             <h4>{details[index].title}</h4>
             <button onClick={openModal}>Learn More</button>
