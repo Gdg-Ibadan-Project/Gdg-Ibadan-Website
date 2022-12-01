@@ -2,6 +2,9 @@
 import image from '../../assets/google.svg'
 import globe from '../../assets/globe.svg'
 // import image from '../../assets/organizers/1.jpeg'
+
+// ORGANIZERS IMAGE
+
 import image1 from '../../assets/organisers/1.jpg'
 import image2 from '../../assets/organisers/2.jpg'
 import image3 from '../../assets/organisers/3.jpg'
@@ -11,9 +14,25 @@ import image6 from '../../assets/organisers/6.png'
 import image7 from '../../assets/organisers/7.png'
 import image8 from '../../assets/organisers/8.png'
 
+// SPEAKERS IMAGE
+
 import imageA from '../../assets/speakers/a.jpeg'
 import imageB from '../../assets/speakers/b.jpeg'
 import imageC from '../../assets/speakers/c.png'
+
+// SPONSORS IMAGE
+
+
+import imageI from '../../assets/sponsors/alt.png'
+import imageII from '../../assets/sponsors/cardify.png'
+import imageIII from '../../assets/sponsors/halal.png'
+import imageIV from '../../assets/sponsors/wtm.png'
+import imageV from '../../assets/sponsors/shiip.png'
+import imageVI from '../../assets/sponsors/lacasera.png'
+import imageVII from '../../assets/sponsors/heyfood.png'
+import imageVIII from '../../assets/sponsors/google.png'
+
+
 
 export const organisersData = [
     {
@@ -107,12 +126,6 @@ export const organisersData = [
 ]
 
 
-
-
-
-
-
-
 export const speakersData = [
     {
         id: 1,
@@ -151,4 +164,47 @@ export const speakersData = [
 ]
 
 
-export const sponsorsData = [{}]
+export const sponsorsData =   [
+    {
+        id: 1,
+        image:  imageI,
+        title: 'Alt School',
+    },
+    {
+        id: 2,
+        image:  imageII,
+        title: 'Cardify',
+    },
+  
+    {
+        id: 3,
+        image:  imageIII,
+        title: ' Halal',
+       
+    }, {
+        id: 4,
+        image:  imageIV,
+        title: ' WTM ',
+       
+    }, {
+        id: 5,
+        image:  imageV,
+        title: ' SHIIP ',
+       
+    }, {
+        id: 6,
+        image:  imageVI,
+        title: ' Lacasera ',
+       
+    }, {
+        id: 7,
+        image:  imageVII,
+        title: ' Hey Food ',
+       
+    }, {
+        id: 8,
+        image:  imageVIII,
+        title: ' Google ',
+       
+    }
+]

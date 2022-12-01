@@ -23,7 +23,7 @@ const Speakers = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      nextImage();
+      // nextImage();
     }, 2000);
     return () => clearInterval(interval);
   }, [index, nextIndex, prevIndex])
@@ -47,7 +47,7 @@ const Speakers = () => {
           <div>
             <h3>{images[prevIndex].title}</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sed ut facilis laborum quas maiores corporis qui amet, sequi autem voluptatibus, alias maxime, saepe necessitatibus quod officiis impedit quos magni.
+            Kati Frantz is a software engineer and Auth0 Ambassador passionate about mentoring and training other developers. He’s published over 150 hours of training resources on Udemy with over 65 000 students.
             </p>
           </div>
 
@@ -60,8 +60,8 @@ const Speakers = () => {
               <Image src={images[index].image } />
               <div>
                 <h3>{images[index].title}</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sed ut facilis laborum quas maiores corporis qui amet, sequi autem voluptatibus, alias maxime, saepe necessitatibus quod officiis impedit quos magni.
+              <p>
+              Chuka is an experienced enterprise software architect with a demonstrated history of working in the information technology and services industry. Skilled in Business Planning, Product Design & Development, Software Engineering, and DevOps. Strong entrepreneurship professional graduated from University of Lagos.
                 </p>
               </div>
 
@@ -82,7 +82,12 @@ const Speakers = () => {
           <div>
             <h3>{images[nextIndex].title}</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sed ut facilis laborum quas maiores corporis qui amet, sequi autem voluptatibus, alias maxime, saepe necessitatibus quod officiis impedit quos magni.
+             
+Idris Olubisi is a graduate of Electrical and Electronics Engineering and a Software Engineer.
+
+He is a software engineer and technical writer with an extensive understanding of open-source, blockchain, software products, and serverless technologies, and he is a passionate speaker in these areas.
+
+A Freecodecamp author/contributor, Section engineering author. Moralis, Hashnode, LogRocket Web3 technical writer, AngelHack ambassador, Web3 Afrika founder, Developer DAO member, and the Backend Lead of SheCodeAfrica, a coding community with over 10,000+ active women in Africa.
             </p>
           </div>
           

@@ -70,7 +70,6 @@ export const MobileNavigation = () => {
   
     <div className={`${styles.mobile_navbar}  animate__animated  ${navToggle ? 'animate__fadeInRight' : ''}`}   style={( navToggle ? {display:'block'} : {visibility:"hidden"})}>
 
-      
       <div onClick={() => { setNavToggle(!navToggle);  setClicked(!clicked)}} >
         <Image src={close} width={40} height={40} alt='navigation close'></Image>
       </div>
