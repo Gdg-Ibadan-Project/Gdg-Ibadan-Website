@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Speakers.module.scss";
 import Image from "next/image";
-import icon from "../../assets/social-1.svg";
-import icon2 from "../../assets/social-2.svg";
-import icon3 from "../../assets/social-3.svg";
+import icon from "../../public/assets/social-1.svg";
+import icon2 from "../../public/assets/social-2.svg";
+import icon3 from "../../public/assets/social-3.svg";
 import { ArrowRight, ArrowLeft } from "iconsax-react";
-import icon4 from "../../assets/social-4.svg";
+import icon4 from "../../public/assets/social-4.svg";
 import { speakersData } from "../Modals/data";
 
 const Speakers = () => {

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { MdTimer } from "react-icons/md";
 import { BiCalendar } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
-import YoutubeIcon from "../../assets/yicon.svg"
+import YoutubeIcon from "../../public/assets/yicon.svg";
 import styles from "./Card.module.scss";
 
 const Card = ({ title, body, article, type }) => {
@@ -13,7 +13,7 @@ const Card = ({ title, body, article, type }) => {
           <div className={styles["container__header--dot"]}>
             <span className={styles[`${type}`]}></span> {type.toLowerCase()}
           </div>
-          <h3>{ title}</h3>
+          <h3>{title}</h3>
           <p>Joshua Olajide</p>
           <ul className={styles["container__header--footer"]}>
             <li>
@@ -30,12 +30,20 @@ const Card = ({ title, body, article, type }) => {
             </li>
           </ul>
         </header>
-        <div className={ `${styles["container__body"]} animate__animated animate__zoomIn` }>
+        <div
+          className={`${styles["container__body"]} animate__animated animate__zoomIn`}
+        >
           <article>
-            This talk by Adeolu Ademuyiwa is going to present a deep dive into te new updates that has been made to react in 2022. This would help you learn how to beeter handle frontend issues wth react. The speaker Adeolu Ademuyiwa is a Principal frontend engineer with Meta. He has 15+ years of experience working in big tech. This talk by Adeolu Ademuyiwa is going to present a deep dive into te new updates that has been made to react in 2022.
+            This talk by Adeolu Ademuyiwa is going to present a deep dive into
+            te new updates that has been made to react in 2022. This would help
+            you learn how to beeter handle frontend issues wth react. The
+            speaker Adeolu Ademuyiwa is a Principal frontend engineer with Meta.
+            He has 15+ years of experience working in big tech. This talk by
+            Adeolu Ademuyiwa is going to present a deep dive into te new updates
+            that has been made to react in 2022.
           </article>
           <section>
-            <Image src={YoutubeIcon} alt="" width='39' height='39' />
+            <Image src={YoutubeIcon} alt="" width="39" height="39" />
           </section>
         </div>
       </div>
