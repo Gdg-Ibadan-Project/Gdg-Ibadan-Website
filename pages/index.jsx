@@ -6,11 +6,9 @@ import Event from "../components/Event/Event";
 import Hero from "../components/Hero/Hero";
 import Sponsors from "../components/Sponsors/Sponsors";
 import Gallery from "../components/Gallery/Gallery";
-import favicon from "../assets/favicon.webp"
+import favicon from "../assets/favicon.webp";
 import Organizers from "../components/Organizers/Organizers";
 import Speakers from "../components/Speakers/Speakers";
-
-
 
 const Home = () => {
   return (
@@ -20,10 +18,9 @@ const Home = () => {
         <meta name="keywords" content="GDG, Ibadan, devfest, community" />
         <link rel="shortcut icon" href={favicon.src} />
         <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
       </Head>
       {/* <MobileNavigation/> */}
       <Hero />
