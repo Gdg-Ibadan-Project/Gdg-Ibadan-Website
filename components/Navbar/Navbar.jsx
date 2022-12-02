@@ -9,7 +9,7 @@ import styles from "./Navbar.module.scss";
 import { Location, Calendar, TextalignJustifyright } from "iconsax-react";
 import close from "../../public/close.svg";
 
-import favicon from "../../assets/favicon.webp";
+import favicon from "../../public/assets/favicon.webp";
 
 const Navbar = () => {
   const navigationState = useContext(NavigationContext);

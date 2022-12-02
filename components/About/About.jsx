@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styles from './About.module.scss'
 import Image from 'next/image'
-import globe from "../../assets/globe.svg";
+import globe from "../../public/assets/globe.svg";
 
 
 const About = () => {

@@ -6,7 +6,7 @@ import Event from "../components/Event/Event";
 import Hero from "../components/Hero/Hero";
 import Sponsors from "../components/Sponsors/Sponsors";
 import Gallery from "../components/Gallery/Gallery";
-import favicon from "../assets/favicon.webp";
+import favicon from "../public/assets/favicon.webp";
 import Organizers from "../components/Organizers/Organizers";
 import Speakers from "../components/Speakers/Speakers";
 

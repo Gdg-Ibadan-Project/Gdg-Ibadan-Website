@@ -1,34 +1,34 @@
-import image from "../../assets/google.svg";
-// import globe from "../../assets/globe.svg";
-// import image from '../../assets/organizers/1.jpeg'
+import image from "../../public/assets/google.svg";
+// import globe from "../../public/assets/globe.svg";
+// import image from '../../public/assets/organizers/1.jpeg'
 
 // ORGANIZERS IMAGE
 
-import image1 from "../../assets/organisers/1.jpg";
-import image2 from "../../assets/organisers/2.jpg";
-import image3 from "../../assets/organisers/3.jpg";
-import image4 from "../../public/4.jpg";
-import image5 from "../../assets/organisers/5.png";
-import image6 from "../../assets/organisers/6.png";
-import image7 from "../../assets/organisers/7.png";
-import image8 from "../../assets/organisers/8.png";
+import image1 from "../../public/assets/organisers/1.jpg";
+import image2 from "../../public/assets/organisers/2.jpg";
+import image3 from "../../public/assets/organisers/3.jpg";
+import image4 from "../../public/assets/organisers/4.jpg";
+import image5 from "../../public/assets/organisers/5.png";
+import image6 from "../../public/assets/organisers/6.png";
+import image7 from "../../public/assets/organisers/7.png";
+import image8 from "../../public/assets/organisers/8.png";
 
 // SPEAKERS IMAGE
 
-import imageA from "../../assets/speakers/a.jpeg";
-import imageB from "../../assets/speakers/b.jpeg";
-import imageC from "../../assets/speakers/c.png";
+import imageA from "../../public/assets/speakers/a.jpeg";
+import imageB from "../../public/assets/speakers/b.jpeg";
+import imageC from "../../public/assets/speakers/c.png";
 
 // SPONSORS IMAGE
 
-import imageI from "../../assets/sponsors/alt.png";
-import imageII from "../../assets/sponsors/cardify.png";
-import imageIII from "../../assets/sponsors/halal.png";
-import imageIV from "../../assets/sponsors/wtm.png";
-import imageV from "../../assets/sponsors/shiip.png";
-import imageVI from "../../assets/sponsors/lacasera.png";
-import imageVII from "../../assets/sponsors/heyfood.png";
-import imageVIII from "../../assets/sponsors/google.png";
+import imageI from "../../public/assets/sponsors/alt.png";
+import imageII from "../../public/assets/sponsors/cardify.png";
+import imageIII from "../../public/assets/sponsors/halal.png";
+import imageIV from "../../public/assets/sponsors/wtm.png";
+import imageV from "../../public/assets/sponsors/shiip.png";
+import imageVI from "../../public/assets/sponsors/lacasera.png";
+import imageVII from "../../public/assets/sponsors/heyfood.png";
+import imageVIII from "../../public/assets/sponsors/google.png";
 
 export const organisersData = [
   {
